@@ -1,4 +1,4 @@
-# 🧠 my_MLP_factory
+# my_MLP_factory 🐝
 
 Basit bir **Python Multi-Layer Perceptron (MLP) sınıfı**.  
 Kendi küçük yapay sinir ağı deneylerini yapmak için tasarlandı. 🎯
