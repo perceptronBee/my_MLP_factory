@@ -33,7 +33,7 @@ labels = [[0],[1],[1],[0]]
 
 # MLP oluşturuluyor
 # [2,2,1] -> Katman yapısı:
-# 2 nöronlu input layer (girdi sayısı=2)
+# 2 nöronlu input layer (nöron başına girdi sayısı=2)
 # 2 nöronlu gizli layer
 # 1 nöronlu output layer
 # 2 -> input katmanındaki her bir nöron için giriş sayısı
