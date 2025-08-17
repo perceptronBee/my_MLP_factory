@@ -27,12 +27,20 @@ Kendi küçük yapay sinir ağı deneylerini yapmak için tasarlandı. 🎯
 ```python
 from my_MLP_factory import MLP
 
+# XOR veri seti
 data = [[0,0],[0,1],[1,0],[1,1]]
 labels = [[0],[1],[1],[0]]
 
-mlp = MLP([2,2,1],2)
-epochs = 50000
-lr = 0.5
+# MLP oluşturuluyor
+# [2,2,1] -> Katman yapısı:
+# 2 nöronlu input layer (girdi sayısı=2)
+# 2 nöronlu gizli layer
+# 1 nöronlu output layer
+# 2 -> input katmanındaki her bir nöron için giriş sayısı
+mlp = MLP([2,2,1], 2)
+
+epochs = 50000  # kaç defa tüm veri seti üzerinden geçileceği
+lr = 0.5        # öğrenme hızı
 
 for epoch in range(epochs):
     loss = mlp.train_epoch(data, labels, lr)
